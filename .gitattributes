@@ -1,0 +1,13 @@
+* text=auto
+*.py text eol=lf
+*.cpp text eol=lf
+*.cppm text eol=lf
+*.h text eol=lf
+# Unified diff context lines intentionally contain a single space.
+*.patch text eol=lf whitespace=-blank-at-eol
+*.json text eol=lf
+*.md text eol=lf
+*.tex text eol=lf
+# Preserve upstream license copies byte-for-byte, including final blank lines.
+LICENSES/* whitespace=-blank-at-eof
+**/LICENSE whitespace=-blank-at-eof

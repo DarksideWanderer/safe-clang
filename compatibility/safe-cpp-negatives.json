@@ -1,0 +1,306 @@
+{
+  "schema_version": 1,
+  "reference_revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+  "scope": "Untouched fixed upstream compile-fail files; native diagnostic attribution is not independent Circle differential evidence.",
+  "criterion": "No compiler crash; first located error must match the reviewed source line and rule. Earlier unrelated errors invalidate attribution. Constructor constraints also need a diagnostic note.",
+  "cases": [
+    {
+      "path": "libsafecxx/test/compile-fail/arc1.cxx",
+      "sha256": "e1578a22e4bf70bf0bc806372c49154b226c7cbd3c760d9ab7d2b3790fbc1089",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An explicit owning-wrapper constructor cannot be invoked by assignment from its payload.",
+      "first_error_line": 12,
+      "diagnostic_regex": "no viable overloaded '='"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/array1.cxx",
+      "sha256": "19046f3acd81f11688c50f62681d6f81aaa491bb386a82bf43b19110388a216c",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Nested borrow projection fails before the later invalidating mutation can be checked."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/box1.cxx",
+      "sha256": "27366e16a8c58dfb1db63abec466627507fb39a95ef1e9bf6c84ab2728609c75",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An explicit owning-wrapper constructor cannot be invoked by assignment from its payload.",
+      "first_error_line": 14,
+      "diagnostic_regex": "no viable overloaded '='"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/box_incomplete.cxx",
+      "sha256": "171c6661eaa12f5a7a0389e7a14c7b573aa94f46fc2d786462b06cb8b79857c4",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Current failure occurs in phantom/deletion handling; the exact incomplete-type drop obligation needs a companion positive control."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/box_thread.cxx",
+      "sha256": "2b13469414a42e614f9a9d153297b6422d2ba201f12cd9826b7eb897a91f64a9",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Integer-range iteration fails before the attempted forbidden box copy."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/cell1.cxx",
+      "sha256": "2eece3793c6e53212baea257ce236e8e3109524d2886095107c2c5557a8c3ea7",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An explicit owning-wrapper constructor cannot be invoked by assignment from its payload.",
+      "first_error_line": 12,
+      "diagnostic_regex": "no viable overloaded '='"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/cell2.cxx",
+      "sha256": "0ade9fd8c21aa3c48915fade5aa89ce7344849af73e4646caf21f4727abfbcdd",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Construction currently fails before get() can test the copy constraint."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/cell3.cxx",
+      "sha256": "abbdfedf49012d804eafea145f1d66d8494f6df353d968f4082d28a31e023559",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Construction currently fails before get() can test the copy constraint."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/cell_box_uaf.cxx",
+      "sha256": "1702e07fe9f9ff14a3ecfff80888881e1edf23b24bbd1e3b3c4cae52291af384",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Region-bearing recursive template argument syntax fails before cyclic region constraints."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/manually_drop1.cxx",
+      "sha256": "a353463af204eaf858e4a12e6a5c64f5dadd59623af0745735571b71b494e430",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An explicit owning-wrapper constructor cannot be invoked by assignment from its payload.",
+      "first_error_line": 12,
+      "diagnostic_regex": "no viable overloaded '='"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/mutex1.cxx",
+      "sha256": "b017274b1f877a54681bf8a9406c876d055a3c2f741b428177148d913d57c9b5",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Implicit payload-to-mutex construction fails before the guard lifetime test."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/mutex2.cxx",
+      "sha256": "d8055a06db2d0dd910cf073bbc894bc1d277e055793e32abc9e2cfe7fbcf3c5a",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Implicit payload-to-mutex construction fails before the shared-to-mutable conversion test."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/mutex3.cxx",
+      "sha256": "26ebe61627b35507d8d4aed820a0f6c5981eaa9b4fa8c01d588569dab68b39cd",
+      "upstream_enabled": false,
+      "oracle_status": "gap",
+      "gap": "Disabled by the fixed upstream CMake file; retained as an exploratory input only."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/rc1.cxx",
+      "sha256": "080f9dd2dfb59649f72abb24733a895cf63bc878843bf3f7b91aa47db5e20381",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An explicit owning-wrapper constructor cannot be invoked by assignment from its payload.",
+      "first_error_line": 12,
+      "diagnostic_regex": "no viable overloaded '='"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/ref_cell1.cxx",
+      "sha256": "079cf64470663c083cbb5bad990e8d667afecd313a39768617a6595a4caf96f8",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An explicit owning-wrapper constructor cannot be invoked by assignment from its payload.",
+      "first_error_line": 12,
+      "diagnostic_regex": "no viable overloaded '='"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/ref_cell2.cxx",
+      "sha256": "b3a31e4f9b9be57ba85fa52076b446e09f3621b125e71ad7bd9fdc71daced3a4",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "A shared access conflicts with a still-live exclusive loan.",
+      "first_error_line": 12,
+      "diagnostic_regex": "module-safety: access conflicts with a live exclusive borrow"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/string_view1.cxx",
+      "sha256": "d4efb5dd196c658aa7cca52d7a5620703182bc8d5d5daba5d4057bcbda337b8d",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "The fixed upstream header deletes the default constructor used by this input; it does not reach the expired-loan rule."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/thread1.cxx",
+      "sha256": "239ce8a714450119ee6597c2c4fa7b5e6b4e21f4c48266edba787b816ef0c29f",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "A not-Send argument cannot cross the thread boundary.",
+      "first_error_line": 22,
+      "diagnostic_regex": "no matching constructor for initialization of 'std2::thread'",
+      "required_note_regex": "constraints not satisfied|because.*evaluated to false|does not satisfy"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/thread2.cxx",
+      "sha256": "b933b1eb9aff681d0bc67fcf89ff7303300a9aaae8be500679c9f37031c9a23b",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An unsafe callable cannot be invoked by the checked thread trampoline.",
+      "first_error_line": 24,
+      "diagnostic_regex": "no matching constructor for initialization of 'std2::thread'",
+      "required_note_regex": "constraints not satisfied|because.*evaluated to false|does not satisfy"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/thread3.cxx",
+      "sha256": "b2e2bb769db20a94f92bd7a74397deafc7b77ab04abac51cb35e3540b1c35fe4",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "A callable explicitly marked not-Send cannot cross the thread boundary.",
+      "first_error_line": 23,
+      "diagnostic_regex": "no matching constructor for initialization of 'std2::thread'",
+      "required_note_regex": "constraints not satisfied|because.*evaluated to false|does not satisfy"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/thread4.cxx",
+      "sha256": "9f1757ebb5f554aeadefa35b148b14d621f2c30bf39cebe016e0c3b7cec261d5",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Library borrow provenance errors currently precede the intended static thread-argument obligation."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/throw1.cxx",
+      "sha256": "04b2821e60e67f6eff5a0cc4bcc0beb46dac1535dccba452fbb898207c59e33c",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An exception payload cannot retain a local borrowed lifetime.",
+      "first_error_line": 13,
+      "diagnostic_regex": "module-safety: exception payload cannot carry a borrowed lifetime"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/asm.cxx",
+      "sha256": "a1986d1288b3fd3b5e7f47496335cfc8a01c7d485b199dee3aadb25277ba70af",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Input lacks size_t and uses x86 registers on macOS arm64; an architecture-neutral companion is needed."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/global_mutable.cxx",
+      "sha256": "91612dc5da9bd4b3ecb5b5a675b8e6d10e59066f8fb2b88e1b08cb116b10b419",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "Unsynchronized access to mutable global storage is unsafe.",
+      "first_error_line": 8,
+      "diagnostic_regex": "module-safety: access to (unclassified or unsafe global storage|shared mutable storage)"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/object_mutable.cxx",
+      "sha256": "5a122401b8c4097aacbb6c326a27dd88fbaa596cddd0be4af52ebd725db25811",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "A mutable field needs a synchronization contract before checked use.",
+      "first_error_line": 4,
+      "diagnostic_regex": "module-safety: mutable field requires a synchronization contract"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/pointer_dereference.cxx",
+      "sha256": "8776f34d9083e04bc39fdee97d75d31aa74a3c80744172b4df8f25afa1e153a1",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "A raw pointer dereference requires an unsafe boundary.",
+      "first_error_line": 7,
+      "diagnostic_regex": "module-safety: raw pointer dereference"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/pointer_difference.cxx",
+      "sha256": "ed87222229f5050df49a911438a51338b68af48cf6325bc88a65f34d94270964",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "Raw pointer arithmetic requires an unsafe boundary.",
+      "first_error_line": 13,
+      "diagnostic_regex": "module-safety: pointer arithmetic"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/pointer_offset.cxx",
+      "sha256": "1c693319e4201a6a08afb2f1c05a5a782dea843312f6e966372192bbc34a02b2",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "Raw pointer offset and indexing require an unsafe boundary.",
+      "first_error_line": 9,
+      "diagnostic_regex": "module-safety: pointer arithmetic"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/pointer_unsafe.cxx",
+      "sha256": "1ab15d09d86215ac89958e19fd8eafe2c99fb30422ab17744dd565f42e77a7ac",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "Object-level and block unsafe permissions do not authorize a separate raw pointer.",
+      "first_error_line": 33,
+      "diagnostic_regex": "module-safety: raw pointer dereference"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/union.cxx",
+      "sha256": "b4b0213231144119e1d6e061dd9df33210df4bb19efb9a60ad7e71bb63da72c2",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "Reading a field other than the active union member is unsafe.",
+      "first_error_line": 18,
+      "diagnostic_regex": "module-safety: union member is not active"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe/unsafe_function.cxx",
+      "sha256": "facc3e9bd485e4027f4ac758a224119241d71355b7ac55ed3e8f33b88e872211",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "#feature safety also classifies the preceding function declaration; exact upstream unsafe-default semantics need a separate control."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/unsafe_cell1.cxx",
+      "sha256": "3c335d01b668b12d4d1a849ce56c9bd4df5d214e5727e195b85415da265f2b48",
+      "upstream_enabled": true,
+      "oracle_status": "reviewed_native_diagnostic",
+      "gap": null,
+      "rule": "An explicit owning-wrapper constructor cannot be invoked by assignment from its payload.",
+      "first_error_line": 12,
+      "diagnostic_regex": "no viable overloaded '='"
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/vector1.cxx",
+      "sha256": "841306973b5569806140ddea61c1d11e6fa4be1983110339aaa169ecb38c0abf",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "Lifetime rejection is present; a rule-specific positive control and invalidating-owner attribution remain to be checked."
+    },
+    {
+      "path": "libsafecxx/test/compile-fail/vector2.cxx",
+      "sha256": "e80185e245e88d52d83811557ceefe6317ed8227d2cd6ec1a9bb690715c8aa0c",
+      "upstream_enabled": true,
+      "oracle_status": "gap",
+      "gap": "The iterator default constructor fails before the expired-iterator use."
+    }
+  ]
+}

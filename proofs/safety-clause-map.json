@@ -1,0 +1,232 @@
+{
+  "schema_version": 1,
+  "specification": "N4861",
+  "inventory_complete": false,
+  "candidate_count": 649,
+  "clauses": [
+    {
+      "id": "basic:basic.life:6",
+      "source": "standards/n4861/source/basic.tex",
+      "line": 3456,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/basic.tex#L3456",
+      "paragraph_sha256": "6948c67465bfa20a91fb62a37f1535c1c98887c6820a6257d6d5285260993fdf",
+      "mechanisms": [
+        "static_rejection",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "src/FlowAnalysis.cpp"
+      ],
+      "tests": [
+        "tests/runtime_boundaries.py",
+        "tests/native_relocation.py"
+      ],
+      "local_model_theorems": [
+        "retired_owner_unreadable",
+        "retired_borrow_unreadable"
+      ],
+      "formal_status": "unproved",
+      "scope": "Track storage readiness and ended lifetimes; raw pointers remain unsafe contract responsibility.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    },
+    {
+      "id": "basic:basic.life:7",
+      "source": "standards/n4861/source/basic.tex",
+      "line": 3525,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/basic.tex#L3525",
+      "paragraph_sha256": "a605b540981e9ae9b4455c929c42a9126686ffacc069a795eb6c68106f0f6b91",
+      "mechanisms": [
+        "static_rejection",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "src/FlowAnalysis.cpp"
+      ],
+      "tests": [
+        "tests/borrow_values.py",
+        "tests/global_borrows.py"
+      ],
+      "local_model_theorems": [
+        "retired_borrow_unreadable"
+      ],
+      "formal_status": "unproved",
+      "scope": "Reject reads/borrows of retired modeled storage; AST/CFG completeness remains open.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    },
+    {
+      "id": "basic:basic.life:9",
+      "source": "standards/n4861/source/basic.tex",
+      "line": 3604,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/basic.tex#L3604",
+      "paragraph_sha256": "235b32c8a0c0260f0c6f325f1212a9b10bcfce5686e91348d06c42876188f13c",
+      "mechanisms": [
+        "static_rejection",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "src/FlowAnalysis.cpp",
+        "frontend/clang-22.1.2.patch"
+      ],
+      "tests": [
+        "tests/native_replacement.py",
+        "tests/native_parameters.py",
+        "tests/exceptions.py"
+      ],
+      "local_model_theorems": [],
+      "formal_status": "unproved",
+      "scope": "Live flags govern normal/EH drops; complete ABI/CodeGen preservation remains unproved.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    },
+    {
+      "id": "expressions:expr.call:6",
+      "source": "standards/n4861/source/expressions.tex",
+      "line": 2961,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/expressions.tex#L2961",
+      "paragraph_sha256": "6bbee85cbf444bd7f3a7c5e04fc6831442a4f46050dfc31a4e9af1a81e7b2c30",
+      "mechanisms": [
+        "static_rejection",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "src/ModuleSafety.cpp",
+        "frontend/clang-22.1.2.patch"
+      ],
+      "tests": [
+        "tests/function_types.py",
+        "tests/native_parameters.py"
+      ],
+      "local_model_theorems": [],
+      "formal_status": "unproved",
+      "scope": "Preserve checked function effects and types; legacy/native by-value ABI bridging remains incomplete.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    },
+    {
+      "id": "expressions:conv.fpint:1",
+      "source": "standards/n4861/source/expressions.tex",
+      "line": 920,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/expressions.tex#L920",
+      "paragraph_sha256": "510f4f18c460ecb5d8cc9b05294f48605bfc3a067b79cdb8374e40585dcd4885",
+      "mechanisms": [
+        "static_rejection",
+        "dynamic_check",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "runtime/conversions.cppm",
+        "src/ModuleSafety.cpp"
+      ],
+      "tests": [
+        "tests/conversions.py",
+        "tests/prove_conversions.py"
+      ],
+      "local_model_theorems": [],
+      "formal_status": "unproved",
+      "scope": "Check representable truncated values before conversion; range model is not a program refinement proof.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    },
+    {
+      "id": "expressions:expr.mul:4",
+      "source": "standards/n4861/source/expressions.tex",
+      "line": 5698,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/expressions.tex#L5698",
+      "paragraph_sha256": "29713d4688efbb2700f8fa01ff2782940a265100dc6dc975cfcde550d0178124",
+      "mechanisms": [
+        "dynamic_check",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "runtime/safety.cppm"
+      ],
+      "tests": [
+        "tests/runtime.py"
+      ],
+      "local_model_theorems": [],
+      "formal_status": "unproved",
+      "scope": "Guard zero divisors and unrepresentable integral quotient before evaluating checked arithmetic.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    },
+    {
+      "id": "expressions:expr.shift:1",
+      "source": "standards/n4861/source/expressions.tex",
+      "line": 5821,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/expressions.tex#L5821",
+      "paragraph_sha256": "10957590293ae18e2b6896fbf1ea0f85cbad6403caddb4c993cbfb3d8f9003a3",
+      "mechanisms": [
+        "dynamic_check",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "runtime/safety.cppm"
+      ],
+      "tests": [
+        "tests/runtime.py",
+        "tests/bitints.py"
+      ],
+      "local_model_theorems": [],
+      "formal_status": "unproved",
+      "scope": "Check actual promoted width and nonnegative shift count; builtin/LLVM correctness stays trusted.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    },
+    {
+      "id": "basic:intro.races:21",
+      "source": "standards/n4861/source/basic.tex",
+      "line": 6124,
+      "source_url": "https://github.com/cplusplus/draft/blob/n4861/source/basic.tex#L6124",
+      "paragraph_sha256": "0adf712b13871190a880f784b76a2d52c77c0de3e9d3a269fddf3e2e3c541e81",
+      "mechanisms": [
+        "static_rejection",
+        "unsafe_contract"
+      ],
+      "implementation": [
+        "src/SafetyContracts.h",
+        "runtime/threads.cppm",
+        "runtime/atomic.cppm"
+      ],
+      "tests": [
+        "tests/threads.py",
+        "tests/ownership_concurrency.py"
+      ],
+      "local_model_theorems": [],
+      "formal_status": "unproved",
+      "scope": "Send/Sync and scoped loans constrain modeled thread APIs; arbitrary unsafe algorithms need their own happens-before proof.",
+      "open_obligations": [
+        "AST/CFG extraction and state-transition refinement",
+        "PCM/ABI/CodeGen preservation",
+        "unsafe runtime and platform contracts"
+      ]
+    }
+  ],
+  "limitations": [
+    "Mappings are partial implementation obligations, not complete normative review.",
+    "No mapped clause is proved by passing tests or local theorems.",
+    "Unmapped candidates remain unproved."
+  ]
+}

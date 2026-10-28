@@ -1,0 +1,4 @@
+{"modules": [
+  {"name": "native_example", "mode": "safe", "interface": "native.cppm"},
+  {"name": "safety", "mode": "safe", "interface": "../runtime/safety.cppm"}
+]}

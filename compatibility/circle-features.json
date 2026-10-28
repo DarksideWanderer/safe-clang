@@ -1,0 +1,3733 @@
+{
+  "schema_version": 2,
+  "scope": "Pinned public Circle and Safe C++ documentation; complete proprietary/undocumented compiler behavior is not inferred.",
+  "inventory_complete": false,
+  "remaining_inventory_work": [
+    "Review and decompose historical Circle documents beyond the New Circle feature/research/core catalog.",
+    "Assign and execute feature-specific negative oracles for unsupported features.",
+    "Establish an independent Circle binary comparison environment."
+  ],
+  "references": {
+    "circle": {
+      "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc"
+    },
+    "safe-cpp": {
+      "revision": "889685274438ca20344d4d9cb472e4392c4e35a9"
+    }
+  },
+  "documents": [
+    {
+      "path": "README.md",
+      "sha256": "70da31ac833b4f3d872e7b773ea9f779eb90987e220e0cefae24e7cd101fc65e",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "bloomberg_talk/index.md",
+      "sha256": "7f018d91a34494b08962d7c9ac2cfe6e25c3d2ea22e562348931631464a6d9ba",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "comprehension/README.md",
+      "sha256": "f08a7413487dadbad47bf9e5031ed89a8c8be7375ffe266ffcd9e92977a38da6",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "conditional/README.md",
+      "sha256": "d0d4877847c8a7d01803c9a2c1951ef8ede4f9af199b71562eadd0a3a674190e",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "cuda/README.md",
+      "sha256": "cf41c3082b137ed333d4f9fb9b40abb61e1a4b43bd749ed8735b3df5b8ea5ad4",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "embed/embed.md",
+      "sha256": "da51ae3c0504fff302d19490393e4c6abfe0ef1766ba679159c8e511e2a323f4",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "erasure/type_erasure.md",
+      "sha256": "efb33d3631f746ed7c834396ea0f76bdc053e2c1b7a3a29cab354278e9b05c9a",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "examples/README.md",
+      "sha256": "e91c420f7cd362e12c5338dd5849c59765c2950d7bd3af0bf1a8b8faea8b8ff5",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "fmt/fmt.md",
+      "sha256": "30bf4aa5d9c615ff9e1a7fbeb5061711f7f90be448bbcc2535932c7cd1283c9d",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "gems/rpn.md",
+      "sha256": "808ae8df86c5ece66e4c7733319b393ea89d367adfc75b6aed31f18dceae3ead",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "gems/taco.md",
+      "sha256": "e31e9e0c3214ba687ae1314dd6815fd651b91e68a8d6092ab4ce84f04c703da9",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "imperative/README.md",
+      "sha256": "950ea3b24385b678045530d180972d6e5dc08296ea7be95a9f8f5b2c7299478a",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "macro/macro.md",
+      "sha256": "6e478c30c30831152ac1ec61b207f0da42f643be6cf792f372411ed1870af508",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "member-traits/README.md",
+      "sha256": "a10974ace8997a7f42c9feb953eff9630cc01410ad88845abfd4f9f7e2987470",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "new-circle/README.md",
+      "sha256": "fab62238b338cee5e513e4d777a2d5222d2c364416bada70f9b9dba260fe9ea8",
+      "review_status": "catalogued_feature_and_research_sections"
+    },
+    {
+      "path": "new_whitepaper/README.md",
+      "sha256": "1fd6faa5227338f9c9658f44b021efb4d30ee716e14910dca1bdfd8df3331be2",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "packs/pack.md",
+      "sha256": "ae128e17dfaf8c6b43602c630b105858736677e04c1cb0e679cf3260f165aed9",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "pattern/README.md",
+      "sha256": "c4beb114c35b3ccaf335b1500a67706997e1e43a8f7785f442e638ba0ca946f6",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "peg_dsl/peg_dsl.md",
+      "sha256": "ba63112a7f3f54bc34a406e33cbad306733ab707269cb949d726ee6d56ea207d",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "reflection/README.md",
+      "sha256": "df2850374cda7749045740adec7bf6ea2efbdbc477a3f9acf988d1f5aa1dfea2",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "regex/regex.md",
+      "sha256": "fecf1afeb0ee05eb8f65e055d24171301ff19e5e3b71f463a0b84e5bae8e42cb",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "stdlib/README.md",
+      "sha256": "a961933c3a872973af5e5f8ba34199bc3650f1c234fd87d853b4841bec3e67e8",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "templates/README.md",
+      "sha256": "6bfd23017bb583d087d1179d880709c96b2704ea6c3331a109fe336a609e8108",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "tuple/README.md",
+      "sha256": "e41a9d95b397ad93aa8531a6ae0a413d5724a0a409f83cc1531d4217820d8a1f",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "type_provider/type_provider.md",
+      "sha256": "91114dba09c2a253227e7d0d6d1116bc9910a45d696cee34b7bf887fe53c18aa",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "universal/README.md",
+      "sha256": "27c435468c016e72da4f600680094c44cd6de687d661a9d1ccbf331d7d591c1b",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "variant/README.md",
+      "sha256": "a3b10b3d2df002488b6f83a7b6807caaadfe4046fd8947ea4dc2bb27b59d36a3",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "walkthrough/eprintf.md",
+      "sha256": "c04c0dd3dafc9a3b215d7d9445b916d9e2630bb39b391f61c683adcd437fa2b1",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "walkthrough/functions.md",
+      "sha256": "02b0448274adfeba7fc2d6bef02ca615547a8c2cee1003594c4140b8015a4f5a",
+      "review_status": "needs_semantic_coverage_review"
+    },
+    {
+      "path": "walkthrough/json_loader.md",
+      "sha256": "f60a10f8470531e15c906ac4fa8636c1edb3c95a40643dc454ea7987898230c6",
+      "review_status": "needs_semantic_coverage_review"
+    }
+  ],
+  "features": [
+    {
+      "id": "circle.directive.edition_2023",
+      "name": "#feature edition_2023",
+      "category": "feature_directive",
+      "expected_behavior": "A named collection of feature settings.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 497
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on edition_2023\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.edition_carbon_2023",
+      "name": "#feature edition_carbon_2023",
+      "category": "feature_directive",
+      "expected_behavior": "A Carbon-inspired named collection of feature settings.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 572
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on edition_carbon_2023\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.adl",
+      "name": "#feature adl",
+      "category": "feature_directive",
+      "expected_behavior": "Calls selecting ADL candidates require explicit adl permission.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 709
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on adl\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.as",
+      "name": "#feature as",
+      "category": "feature_directive",
+      "expected_behavior": "Explicit as-expressions select checked conversion behavior.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 878
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on as\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.choice",
+      "name": "#feature choice",
+      "category": "feature_directive",
+      "expected_behavior": "Choice alternatives, payload ownership and structural pattern matching.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 1054
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on choice\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.default_value_initialization",
+      "name": "#feature default_value_initialization",
+      "category": "feature_directive",
+      "expected_behavior": "Default declarations value-initialize objects.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 1550
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on default_value_initialization\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.forward",
+      "name": "#feature forward",
+      "category": "feature_directive",
+      "expected_behavior": "First-class forwarding types and expressions.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 1588
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on forward\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.interface",
+      "name": "#feature interface",
+      "category": "feature_directive",
+      "expected_behavior": "Native interfaces, impl lookup, associated types and dyn erasure.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 1877
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on interface\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.new_decl_syntax",
+      "name": "#feature new_decl_syntax",
+      "category": "feature_directive",
+      "expected_behavior": "fn and var declaration grammar.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 2787
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on new_decl_syntax\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_function_overloading",
+      "name": "#feature no_function_overloading",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow function overload sets.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3014
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_function_overloading\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_ctor_conversions",
+      "name": "#feature no_implicit_ctor_conversions",
+      "category": "feature_directive",
+      "expected_behavior": "Require explicit construction instead of implicit converting constructors.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3019
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_ctor_conversions\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_enum_to_underlying",
+      "name": "#feature no_implicit_enum_to_underlying",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow implicit enum-to-underlying conversion.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3021
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_enum_to_underlying\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_floating_narrowing",
+      "name": "#feature no_implicit_floating_narrowing",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow implicit narrowing floating conversions.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3023
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_floating_narrowing\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_integral_narrowing",
+      "name": "#feature no_implicit_integral_narrowing",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow implicit narrowing integer conversions.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3027
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_integral_narrowing\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_pointer_to_bool",
+      "name": "#feature no_implicit_pointer_to_bool",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow implicit pointer-to-bool conversion.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3031
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_pointer_to_bool\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_signed_to_unsigned",
+      "name": "#feature no_implicit_signed_to_unsigned",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow implicit signed-to-unsigned conversion.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3110
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_signed_to_unsigned\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_user_conversions",
+      "name": "#feature no_implicit_user_conversions",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow implicit user-defined conversions.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3114
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_user_conversions\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_implicit_widening",
+      "name": "#feature no_implicit_widening",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow implicit widening conversions.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3116
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_implicit_widening\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_integral_promotions",
+      "name": "#feature no_integral_promotions",
+      "category": "feature_directive",
+      "expected_behavior": "Disable built-in integral promotions.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3118
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_integral_promotions\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_multiple_inheritance",
+      "name": "#feature no_multiple_inheritance",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow multiple base classes.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3169
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_multiple_inheritance\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_signed_overflow_ub",
+      "name": "#feature no_signed_overflow_ub",
+      "category": "feature_directive",
+      "expected_behavior": "Define checked behavior for signed overflow.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3173
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_signed_overflow_ub\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_user_defined_ctors",
+      "name": "#feature no_user_defined_ctors",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow user-defined constructors.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3260
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_user_defined_ctors\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_virtual_inheritance",
+      "name": "#feature no_virtual_inheritance",
+      "category": "feature_directive",
+      "expected_behavior": "Disallow virtual inheritance.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3264
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_virtual_inheritance\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.no_zero_nullptr",
+      "name": "#feature no_zero_nullptr",
+      "category": "feature_directive",
+      "expected_behavior": "Require nullptr instead of integer zero null constants.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3268
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on no_zero_nullptr\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.placeholder_keyword",
+      "name": "#feature placeholder_keyword",
+      "category": "feature_directive",
+      "expected_behavior": "Replace placeholder underscore syntax with an explicit keyword.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3300
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on placeholder_keyword\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.recurrence",
+      "name": "#feature recurrence",
+      "category": "feature_directive",
+      "expected_behavior": "Programmable recurrence expressions over packs.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3363
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on recurrence\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.require_control_flow_braces",
+      "name": "#feature require_control_flow_braces",
+      "category": "feature_directive",
+      "expected_behavior": "Require braces around control-flow bodies.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3578
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on require_control_flow_braces\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.safer_initializer_list",
+      "name": "#feature safer_initializer_list",
+      "category": "feature_directive",
+      "expected_behavior": "Separate initializer-list overload selection from other construction.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3638
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on safer_initializer_list\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.self",
+      "name": "#feature self",
+      "category": "feature_directive",
+      "expected_behavior": "Explicit receiver spelling and receiver kinds.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3666
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on self\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.simpler_precedence",
+      "name": "#feature simpler_precedence",
+      "category": "feature_directive",
+      "expected_behavior": "Require unambiguous grouping for mixed binary operators.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3676
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on simpler_precedence\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.switch_break",
+      "name": "#feature switch_break",
+      "category": "feature_directive",
+      "expected_behavior": "Change switch case fallthrough/break defaults.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3711
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on switch_break\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.template_brackets",
+      "name": "#feature template_brackets",
+      "category": "feature_directive",
+      "expected_behavior": "Alternative template-argument delimiter rules.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3767
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on template_brackets\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.tuple",
+      "name": "#feature tuple",
+      "category": "feature_directive",
+      "expected_behavior": "First-class tuple types, values and operations.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3844
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on tuple\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.ncom",
+      "name": "#feature ncom",
+      "category": "feature_directive",
+      "expected_behavior": "Research proposal for a new C++ object model.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3950
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on ncom\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.borrow_checker",
+      "name": "#feature borrow_checker",
+      "category": "feature_directive",
+      "expected_behavior": "Research proposal for borrowing and lifetime checking.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4071
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on borrow_checker\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.context_free_grammar",
+      "name": "#feature context_free_grammar",
+      "category": "feature_directive",
+      "expected_behavior": "Research proposal for a context-free declaration/expression grammar.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4098
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on context_free_grammar\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.cyclone_pointers",
+      "name": "#feature cyclone_pointers",
+      "category": "feature_directive",
+      "expected_behavior": "Research proposal for Cyclone-style pointer categories.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4130
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on cyclone_pointers\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.generic",
+      "name": "#feature generic",
+      "category": "feature_directive",
+      "expected_behavior": "Research proposal for generics beyond current C++ template rules.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4153
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on generic\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.meta",
+      "name": "#feature meta",
+      "category": "feature_directive",
+      "expected_behavior": "Research proposal for metaprogramming facilities.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4186
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on meta\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.parameter_directives",
+      "name": "#feature parameter_directives",
+      "category": "feature_directive",
+      "expected_behavior": "Research proposal for parameter directives.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4217
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on parameter_directives\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.directive.relocate",
+      "name": "#feature relocate",
+      "category": "feature_directive",
+      "expected_behavior": "Relocation object model, constructors and parameter ownership.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4225
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Lex/PPDirectives.cpp",
+          "symbol": "HandleDirective",
+          "line": 1238
+        }
+      ],
+      "implementation_status": "unsupported_directive",
+      "positive_cases": [
+        {
+          "kind": "documented_directive",
+          "source": "#feature on relocate\nint main(){return 0;}\n",
+          "expected": "accept with the documented feature semantics"
+        }
+      ],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated on this macOS arm64 host."
+      },
+      "gaps": [
+        "The safety mode currently recognizes only the safety feature assertion; semantic support under that mode does not implement this independent directive.",
+        "A feature-specific semantic negative oracle remains to be assigned."
+      ]
+    },
+    {
+      "id": "circle.choice",
+      "name": "Choice and patterns",
+      "category": "language_semantics",
+      "expected_behavior": "Tagged alternatives, structural/test/designated patterns and exhaustive matches.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 1054
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "ActOnCircleMatchFinish",
+          "line": 17475
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_match.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_patterns.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_match.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_patterns.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/choice_match.py",
+        "tests/choice_patterns.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original old-Circle pattern adapters and the entire grammar are not independently compared."
+      ]
+    },
+    {
+      "id": "circle.interface",
+      "name": "Interfaces and associated declarations",
+      "category": "language_semantics",
+      "expected_behavior": "Interface contracts, associated types and template lookup.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 1877
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaDecl.cpp",
+          "symbol": "safecpp.native.interface",
+          "line": 9236
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/interface_declarations.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/interface_declarations.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/interface_declarations.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Interface inheritance, defaults and complete pack semantics require individual auditing."
+      ]
+    },
+    {
+      "id": "circle.impl",
+      "name": "Impl selection and calls",
+      "category": "language_semantics",
+      "expected_behavior": "Select impls, resolve methods and associated projections.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 2053
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "ActOnCircleImplQueryExpr",
+          "line": 18639
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/impl_calls.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/impl_selection.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/impl_overloads.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/impl_calls.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/impl_selection.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/impl_overloads.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/impl_calls.py",
+        "tests/impl_selection.py",
+        "tests/impl_overloads.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Complete template/specialization combinations need independent reference comparison."
+      ]
+    },
+    {
+      "id": "circle.dyn",
+      "name": "Native type erasure",
+      "category": "language_semantics",
+      "expected_behavior": "dyn dispatch, owning erasure and destruction.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 2414
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "dyn",
+          "line": 85
+        }
+      ],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Audit full inherited/default interface dispatch and erased value semantics."
+      ]
+    },
+    {
+      "id": "circle.tuple",
+      "name": "Tuple values and calls",
+      "category": "language_semantics",
+      "expected_behavior": "Structural tuple values, element access, whole-tuple packs and calls.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 3844
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "ActOnCircleTupleValue",
+          "line": 18520
+        },
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/TreeTransform.h",
+          "symbol": "TransformCXXFunctionalCastExpr",
+          "line": 14935
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_call.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_dependent.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_lifetimes.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_call.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_dependent.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_lifetimes.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/tuple_call.py",
+        "tests/tuple_dependent.py",
+        "tests/tuple_lifetimes.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Untyped inferred values require a trailing comma; original tuple library member packs remain unsupported."
+      ]
+    },
+    {
+      "id": "circle.relocation",
+      "name": "Relocation constructors",
+      "category": "language_semantics",
+      "expected_behavior": "Relocate ownership, construct a destination and clean remaining source subobjects.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4225
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/include/clang/AST/CircleRelocation.h",
+          "symbol": "CircleRelocationQuery",
+          "line": 29
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_relocation.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_relocation.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/native_relocation.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "No independent Circle binary comparison; fallback C++ constructor combinations are bounded by implemented selection."
+      ]
+    },
+    {
+      "id": "circle.legacy_abi",
+      "name": "Legacy by-value interoperation",
+      "category": "language_semantics",
+      "expected_behavior": "Preserve ownership and destruction responsibility across legacy and checked calls.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4411
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/CodeGen/CGCall.cpp",
+          "symbol": "EmitCallArg",
+          "line": 4718
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/legacy_value_abi.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_parameters.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/legacy_value_abi.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_parameters.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/legacy_value_abi.py",
+        "tests/native_parameters.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Only macOS arm64 interoperation executed; proposed new calling conventions and automatic pointer thunks are absent."
+      ]
+    },
+    {
+      "id": "circle.template_kinds",
+      "name": "Nine template parameter kinds",
+      "category": "language_semantics",
+      "expected_behavior": "Type, value, template and universal parameter categories.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4440
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaTemplate.cpp",
+          "symbol": "CheckTemplateArgumentList",
+          "line": 3782
+        }
+      ],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Universal/template parameter forms in original examples are not supported."
+      ]
+    },
+    {
+      "id": "circle.overload_sets",
+      "name": "Lifting overload sets",
+      "category": "language_semantics",
+      "expected_behavior": "Pass overload sets and lift qualified/unqualified lookup.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4607
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaOverload.cpp",
+          "symbol": "ResolveAddressOfOverloadedFunction",
+          "line": 2676
+        }
+      ],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Circle lifting lambdas and overload-set template arguments require implementation."
+      ]
+    },
+    {
+      "id": "circle.string_operators",
+      "name": "String constant formatting",
+      "category": "language_semantics",
+      "expected_behavior": "Compile-time string operators, pipeline formatting and argument checking.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4830
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "ActOnCircleStringFormat",
+          "line": 18166
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/std2_consumers.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/std2_consumers.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/std2_consumers.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Full formatting/pipeline grammar and upstream format library remain unverified."
+      ]
+    },
+    {
+      "id": "circle.backticks",
+      "name": "Backtick identifiers",
+      "category": "language_semantics",
+      "expected_behavior": "Escaped identifiers including keyword and string spellings.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 4964
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "No backtick-token implementation or semantic oracle assigned."
+      ]
+    },
+    {
+      "id": "circle.pack_slices",
+      "name": "Pack and tuple subscripts/slices",
+      "category": "language_semantics",
+      "expected_behavior": "Index, slice and expand packs and tuple elements.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5016
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "ActOnCircleTupleSplat",
+          "line": 18550
+        },
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/TreeTransform.h",
+          "symbol": "TransformExprs",
+          "line": 546
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_dependent.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/tuple_dependent.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/tuple_dependent.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Full static slice/range modifiers and arbitrary expression packs remain incomplete."
+      ]
+    },
+    {
+      "id": "circle.integer_packs",
+      "name": "Integer packs",
+      "category": "language_semantics",
+      "expected_behavior": "Generate compile-time integer packs with Circle syntax.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5055
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original integer-pack forms require parsing and substitution."
+      ]
+    },
+    {
+      "id": "circle.member_packs",
+      "name": "Data member packs",
+      "category": "language_semantics",
+      "expected_behavior": "Declare, construct and destroy pack-valued fields.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5160
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original tuple/variant/mdspan headers fail on member-pack syntax."
+      ]
+    },
+    {
+      "id": "circle.multi_conditional",
+      "name": "Multi-conditional expressions",
+      "category": "language_semantics",
+      "expected_behavior": "Select among pack alternatives with constexpr/runtime conditions.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5247
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "No full Circle multi-conditional implementation."
+      ]
+    },
+    {
+      "id": "circle.imperative_arguments",
+      "name": "Imperative arguments",
+      "category": "language_semantics",
+      "expected_behavior": "argument-if/for/group/let drive argument construction.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5360
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "No Circle imperative argument grammar or expansion engine."
+      ]
+    },
+    {
+      "id": "circle.reflection",
+      "name": "Reflection traits",
+      "category": "language_semantics",
+      "expected_behavior": "Reflect members, bases, enums, functions and specialization information.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5377
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "ActOnCircleTypeTrait",
+          "line": 18696
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/conditional_contracts.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/conditional_contracts.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/conditional_contracts.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Implemented safety traits do not establish the full reflection catalog."
+      ]
+    },
+    {
+      "id": "circle.pack_traits",
+      "name": "Pack-transforming algorithms",
+      "category": "language_semantics",
+      "expected_behavior": "Sort, unique, count, erase and combine packs.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5431
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Pack trait catalog and library algorithms require implementation."
+      ]
+    },
+    {
+      "id": "circle.type_traits",
+      "name": "Circle type/universal traits",
+      "category": "language_semantics",
+      "expected_behavior": "Type identity, properties, strings and universal parameter reflection.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new-circle/README.md",
+        "line": 5462
+      },
+      "implementation": [
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "ActOnCircleTypeTrait",
+          "line": 18696
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/conditional_contracts.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/conditional_contracts.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and refusal cases in the script; only a current passing run supplies evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/conditional_contracts.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Only tested safety/type-string properties are validated; the full trait list is open."
+      ]
+    },
+    {
+      "id": "circle.meta_execution",
+      "name": "Compile-time interpreter",
+      "category": "language_semantics",
+      "expected_behavior": "Execute ordinary code as meta statements and inject runtime declarations.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "examples/README.md",
+        "line": 480
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.dynamic_names",
+      "name": "Dynamic identifiers",
+      "category": "language_semantics",
+      "expected_behavior": "Create names from compile-time strings and integers.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "new_whitepaper/README.md",
+        "line": 70
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.typed_enums",
+      "name": "Typed enumerations",
+      "category": "language_semantics",
+      "expected_behavior": "Attach types to enumeration members and transform type lists.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "reflection/README.md",
+        "line": 913
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.user_attributes",
+      "name": "User-defined attributes",
+      "category": "language_semantics",
+      "expected_behavior": "Declare, apply and query typed user attributes.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "reflection/README.md",
+        "line": 695
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.meta_loops",
+      "name": "Meta enumeration/type loops",
+      "category": "language_semantics",
+      "expected_behavior": "Iterate reflected members or types while generating declarations.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "reflection/README.md",
+        "line": 1309
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.macros",
+      "name": "Expression and statement macros",
+      "category": "language_semantics",
+      "expected_behavior": "Expand typed AST-producing macros with Circle lookup rules.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "macro/macro.md",
+        "line": 1
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.embed",
+      "name": "File embedding",
+      "category": "language_semantics",
+      "expected_behavior": "Embed external file contents and arrays during compilation.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "embed/embed.md",
+        "line": 1
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.comprehensions",
+      "name": "Dynamic generators and comprehensions",
+      "category": "language_semantics",
+      "expected_behavior": "Slices, ranges, for-expressions and functional folds.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "comprehension/README.md",
+        "line": 181
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.legacy_patterns",
+      "name": "Extensible legacy pattern matching",
+      "category": "language_semantics",
+      "expected_behavior": "is/as customizations, preconditions, reflected and dereference patterns.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "pattern/README.md",
+        "line": 27
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.legacy_erasure",
+      "name": "Generated type erasure",
+      "category": "language_semantics",
+      "expected_behavior": "Reflect and generate erased core and optional method interfaces.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "erasure/type_erasure.md",
+        "line": 137
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.type_providers",
+      "name": "Schema-driven type providers",
+      "category": "language_semantics",
+      "expected_behavior": "Generate types and runtime readers from schemas.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "type_provider/type_provider.md",
+        "line": 17
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.regex_dsl",
+      "name": "Compile-time parsers and regular expressions",
+      "category": "language_semantics",
+      "expected_behavior": "Execute parsers and lower custom language ASTs during compilation.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "regex/regex.md",
+        "line": 47
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.peg_dsl",
+      "name": "Compile-time PEG DSL",
+      "category": "language_semantics",
+      "expected_behavior": "Integrate compile-time parser libraries and AST lowering.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "peg_dsl/peg_dsl.md",
+        "line": 14
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.rpn_dsl",
+      "name": "Embedded RPN compiler",
+      "category": "language_semantics",
+      "expected_behavior": "Parse expressions and emit typed AST operations.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "gems/rpn.md",
+        "line": 21
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.taco_dsl",
+      "name": "Tensor compiler integration",
+      "category": "language_semantics",
+      "expected_behavior": "Invoke TACO and lower tensor IR during compilation.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "gems/taco.md",
+        "line": 103
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.cuda",
+      "name": "CUDA/device compilation",
+      "category": "language_semantics",
+      "expected_behavior": "CUDA kernels, host/device selection, reflection, attributes and device libraries.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "cuda/README.md",
+        "line": 34
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.stdlib",
+      "name": "Original Circle standard-library implementations",
+      "category": "language_semantics",
+      "expected_behavior": "Implement original tuple, variant, mdspan and overload helpers.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "stdlib/README.md",
+        "line": 1
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "circle.universal_members",
+      "name": "Universal member access",
+      "category": "language_semantics",
+      "expected_behavior": "Structured bindings, object lengths, implicit slices and pack indices.",
+      "reference": {
+        "baseline": "circle",
+        "revision": "b81c37d2bb227cdf6aa58a90dd00f12f62c8d3bc",
+        "path": "universal/README.md",
+        "line": 15
+      },
+      "implementation": [],
+      "implementation_status": "unimplemented_or_unverified",
+      "positive_cases": [],
+      "negative_cases": [],
+      "local_regressions": [],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Original source compatibility and feature-specific positive/negative semantic oracles remain open."
+      ]
+    },
+    {
+      "id": "safe.boundaries",
+      "name": "Safety boundaries",
+      "category": "language_semantics",
+      "expected_behavior": "Checked functions, nested unsafe blocks and effect classification.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 537
+      },
+      "implementation": [
+        {
+          "path": "src/ModuleSafety.cpp",
+          "symbol": "class Checker",
+          "line": 139
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/run.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/function_types.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/run.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/function_types.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/run.py",
+        "tests/function_types.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.unsafe_qualifier",
+      "name": "Object unsafe qualifiers",
+      "category": "language_semantics",
+      "expected_behavior": "Object-level unsafe permissions remain confined to the audited object.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 707
+      },
+      "implementation": [
+        {
+          "path": "src/ModuleSafety.cpp",
+          "symbol": "class Checker",
+          "line": 139
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/run.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/run.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/run.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.borrow",
+      "name": "First-class borrows",
+      "category": "language_semantics",
+      "expected_behavior": "Affine mutable and shared borrows, liveness and invalidation.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 920
+      },
+      "implementation": [
+        {
+          "path": "src/FlowAnalysis.cpp",
+          "symbol": "analyzeFunction",
+          "line": 7501
+        },
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaType.cpp",
+          "symbol": "DeclType.Ref.SafetyBorrow &&",
+          "line": 4818
+        },
+        {
+          "path": "src/FlowAnalysis.cpp",
+          "symbol": "Vars valueParents(",
+          "line": 2547
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/borrow_values.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/borrow_capabilities.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/aggregate_reborrow_parents.py",
+          "criterion": "Eight local/PCM O0/O2 plain and ASan/UBSan programs execute nested aggregate reborrows, writes, transfers, branch joins, imported template instantiations and direct/indirect temporary-aggregate calls."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/borrow_values.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/borrow_capabilities.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/aggregate_reborrow_parents.py",
+          "criterion": "Thirty-three diagnostic-attributed refusals cover duplicate exclusive loans, expired owners, parent mutation, qualification, initializer effects, direct/indirect temporary-aggregate arguments and checked transfers; tested locally and through PCM at O0/O2."
+        }
+      ],
+      "local_regressions": [
+        "tests/borrow_values.py",
+        "tests/borrow_capabilities.py",
+        "tests/aggregate_reborrow_parents.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence.",
+        "Aggregate-parent propagation covers explicit initializer lists, ordinary aggregate by-value calls, copies/transfers and known source loans; opaque constructor retention and phantom/indirect storage continue to require their existing dedicated contracts."
+      ]
+    },
+    {
+      "id": "safe.lifetimes",
+      "name": "Function lifetime relations",
+      "category": "language_semantics",
+      "expected_behavior": "Quantified call contracts, outlives, substitutions and identity.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 1443
+      },
+      "implementation": [
+        {
+          "path": "src/SafetyContracts.h",
+          "symbol": "fieldLifetimeRegion",
+          "line": 59
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/region_relation_entries.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/higher_ranked_relation_algebra.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/region_relation_entries.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/higher_ranked_relation_algebra.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/region_relation_entries.py",
+        "tests/higher_ranked_relation_algebra.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.captures",
+      "name": "Lexical region captures",
+      "category": "language_semantics",
+      "expected_behavior": "Scoped higher-order captures and contravariant composition.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 1539
+      },
+      "implementation": [
+        {
+          "path": "src/SafetyContracts.h",
+          "symbol": "fieldLifetimeRegion",
+          "line": 59
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/outer_region_captures.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/captured_callable_values.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/outer_region_captures.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/captured_callable_values.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/outer_region_captures.py",
+        "tests/captured_callable_values.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.phantom",
+      "name": "Phantom type data",
+      "category": "language_semantics",
+      "expected_behavior": "Non-storage fields carry lifetime/type constraints without runtime subobjects.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 1607
+      },
+      "implementation": [
+        {
+          "path": "src/SafetyContracts.h",
+          "symbol": "fieldLifetimeRegion",
+          "line": 59
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/phantom_data.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/phantom_data.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/phantom_data.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.class_projection",
+      "name": "Generic region projections",
+      "category": "language_semantics",
+      "expected_behavior": "Project class parameters, nested instances, aliases and associated types.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 1788
+      },
+      "implementation": [
+        {
+          "path": "src/SafetyContracts.h",
+          "symbol": "fieldLifetimeRegion",
+          "line": 59
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/generic_region_projection.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/class_parameter_variance.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/generic_region_projection.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/class_parameter_variance.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/generic_region_projection.py",
+        "tests/class_parameter_variance.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.mutation",
+      "name": "Explicit mutation",
+      "category": "language_semantics",
+      "expected_behavior": "Mutable contexts and exclusive access permissions.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 1906
+      },
+      "implementation": [
+        {
+          "path": "src/ModuleSafety.cpp",
+          "symbol": "class Checker",
+          "line": 139
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/borrow_values.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/borrow_values.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/borrow_values.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.slice",
+      "name": "Arrays and slices",
+      "category": "language_semantics",
+      "expected_behavior": "Slice address+length, conversion, bounds, calls and ownership.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 2112
+      },
+      "implementation": [
+        {
+          "path": "src/FlowAnalysis.cpp",
+          "symbol": "analyzeFunction",
+          "line": 7501
+        },
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaInit.cpp",
+          "symbol": "QualType SliceArray = InitE->getType();",
+          "line": 10256
+        },
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaOverload.cpp",
+          "symbol": "static QualType circleArraySliceSource(",
+          "line": 1813
+        },
+        {
+          "path": "src/FlowAnalysis.cpp",
+          "symbol": "const Expr *arraySliceSource(",
+          "line": 201
+        },
+        {
+          "path": "llvm-project-22.1.2.src/clang/lib/Sema/SemaExpr.cpp",
+          "symbol": "// Freeze the slice",
+          "line": 5013
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/array_slice_conversions.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/slice_rebuild_regions.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "untouched_upstream_runtime",
+          "path": "downloads/safe-cpp-reference/libsafecxx/test/compile-fail/panic/subscript_slice.cxx",
+          "criterion": "Array-borrow to fat slice compiles and executes the original abort handler at O0/O2; sanitizer variants in array_slice_conversions.py must reach the same panic before UB."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/array_slice_conversions.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/slice_rebuild_regions.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/array_slice_conversions.py",
+        "tests/slice_rebuild_regions.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence.",
+        "Index expressions that may invalidate or rebind the captured slice loan are conservatively rejected; arbitrary effectful receiver/index combinations are not claimed compatible."
+      ]
+    },
+    {
+      "id": "safe.rel_operator",
+      "name": "Relocation operators",
+      "category": "language_semantics",
+      "expected_behavior": "operator rel, replacement and conditional cleanup.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 2233
+      },
+      "implementation": [
+        {
+          "path": "src/FlowAnalysis.cpp",
+          "symbol": "analyzeFunction",
+          "line": 7501
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/relocation_operators.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_replacement.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/relocation_operators.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_replacement.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/runtime_semantics.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/relocation_operators.py",
+        "tests/native_replacement.py",
+        "tests/runtime_semantics.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.choice",
+      "name": "Safe choice ownership",
+      "category": "language_semantics",
+      "expected_behavior": "Safe alternative activation, borrowing and matching.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 2246
+      },
+      "implementation": [
+        {
+          "path": "src/FlowAnalysis.cpp",
+          "symbol": "analyzeFunction",
+          "line": 7501
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_borrow_patterns.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_match.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_borrow_patterns.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/choice_match.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/choice_borrow_patterns.py",
+        "tests/choice_match.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.interior_mutability",
+      "name": "Interior mutability",
+      "category": "language_semantics",
+      "expected_behavior": "Audited UnsafeCell/Cell/RefCell state and borrow contracts.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 2465
+      },
+      "implementation": [
+        {
+          "path": "src/FlowAnalysis.cpp",
+          "symbol": "analyzeFunction",
+          "line": 7501
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/std2_consumers.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/std2_consumers.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/std2_consumers.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.threads",
+      "name": "Send and Sync",
+      "category": "language_semantics",
+      "expected_behavior": "Static lifetime and thread-safety contracts.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 2564
+      },
+      "implementation": [
+        {
+          "path": "src/ModuleSafety.cpp",
+          "symbol": "class Checker",
+          "line": 139
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/threads.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/threads.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/threads.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        },
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/threads.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/threads.py",
+        "tests/threads.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    },
+    {
+      "id": "safe.panic",
+      "name": "Runtime safety checks",
+      "category": "language_semantics",
+      "expected_behavior": "Panic on unsafe arithmetic and bounds rather than undefined behavior.",
+      "reference": {
+        "baseline": "safe-cpp",
+        "revision": "889685274438ca20344d4d9cb472e4392c4e35a9",
+        "path": "proposal/draft.md",
+        "line": 464
+      },
+      "implementation": [
+        {
+          "path": "src/ModuleSafety.cpp",
+          "symbol": "class Checker",
+          "line": 139
+        }
+      ],
+      "implementation_status": "partial",
+      "positive_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_panic_checks.py",
+          "criterion": "Executable assertions and expected diagnostics in this script; report must execute it on the current compiler."
+        }
+      ],
+      "negative_cases": [
+        {
+          "kind": "mixed_regression_script",
+          "path": "tests/native_panic_checks.py",
+          "criterion": "Refusal cases in the same script; source presence is not execution evidence."
+        }
+      ],
+      "local_regressions": [
+        "tests/native_panic_checks.py"
+      ],
+      "independent_comparison": {
+        "status": "unavailable",
+        "reason": "No independent Circle binary has been validated; local models and pristine Clang ABI checks are separate evidence."
+      },
+      "gaps": [
+        "Fixed upstream negative and panic inputs include remaining unrelated failures; see per-input compatibility evidence."
+      ]
+    }
+  ]
+}

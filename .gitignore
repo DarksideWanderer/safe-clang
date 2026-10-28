@@ -1,0 +1,30 @@
+/build/
+/module-build/
+/downloads/
+/llvm-project-22.1.2.src/
+/llvm-build/
+/native-module-build
+__pycache__/
+/.module-build.generations/
+/.native-module-build.generations/
+/.module-build.lock
+/.native-module-build.lock
+/.DS_Store
+*.pcm
+
+.toolchains/
+*.olean
+*.ilean
+
+# Local experiments and credentials are never source-release inputs.
+/.debugtmp/
+/scratch_*
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# The standards text is a locally obtained audit dependency, not redistributed.
+# Existing private-history entries are excluded by prepare_public_source.py.
+/standards/n4861/source/
