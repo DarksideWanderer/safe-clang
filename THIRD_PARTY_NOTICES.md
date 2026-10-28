@@ -1,6 +1,6 @@
 # Third-party sources and notices
 
-ModuleSafety is an independent experimental Clang extension. It is not an
+safe-clang is an independent experimental Clang extension (internal checker: ModuleSafety). It is not an
 official LLVM, Circle, Safe C++ or Rust release, and no endorsement by their
 authors or organizations is implied. Names here identify reference projects.
 
@@ -35,7 +35,7 @@ copyright or license headers when applying or repackaging the patch.
   License 1.0). A second verbatim license copy is in `LICENSES/BSL-1.0.txt`.
 - Modifications adapt iterator concepts, associated traits and checked compiler
   integration. See `include/std2/README.md` and the implementation history.
-- The small std2 excerpt discussed in `IMPLEMENTATION-STATUS.md` and adapter
+- The small std2 excerpt in historical implementation notes and adapter
   fragments exercised by `tests/std2_concepts.py` derive from this same reference;
   those upstream fragments retain the Boost license.
 - Untouched official test sources are read from a locally fetched checkout;

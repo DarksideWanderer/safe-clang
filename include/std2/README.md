@@ -27,6 +27,6 @@ of every std2 operation or all Circle library implementations.
 
 The dated scope, remaining gaps and reproduction instructions are in
 [`compatibility/README.md`](../../compatibility/README.md) and
-[`FOUR-PILLARS.md`](../../FOUR-PILLARS.md). This header requires the patched
+[`docs/VALIDATION.md`](../../docs/VALIDATION.md). This header requires the patched
 native frontend; an ordinary Clang AST plugin cannot implement its native
 syntax and type representation by itself.

@@ -15,7 +15,7 @@
 
 ```sh
 python3 tools/prepare_public_source.py
-python3 tools/prepare_public_source.py --output build/github-public
+python3 tools/prepare_public_source.py --output build/safe-clang
 ```
 
 脚本使用明确的源码范围，拒绝未分类文件、符号链接、二进制、超大文件、部分已知
@@ -27,7 +27,7 @@ python3 tools/prepare_public_source.py --output build/github-public
 若发布目录还没有初始化 Git，可在其中审阅并提交：
 
 ```sh
-cd build/github-public
+cd build/safe-clang
 git init -b main
 git add --all
 git diff --cached --stat
@@ -43,12 +43,12 @@ noreply 地址。不要擅自替换已有提交的作者。
 目录中配置真实地址并推送：
 
 ```sh
-git remote add origin git@github.com:YOUR_ACCOUNT/YOUR_REPOSITORY.git
+git remote add origin git@github.com:YOUR_ACCOUNT/safe-clang.git
 git push -u origin main
 ```
 
-用真实账号与仓库名称替换占位符。公开发布前确认使用的是导出仓库，且
-`git rev-list --count HEAD` 对首次快照为 `1`。不要对原开发仓库直接执行此推送步骤。
+用真实账号替换占位符。公开发布前确认当前目录是独立的 safe-clang 仓库，
+没有接入旧开发历史。不要对原开发仓库直接执行此推送步骤。
 GitHub 仓库可先设为 private 以审阅待公开内容；private 本身不会解决许可义务。
 
 后续可直接在公开仓库继续开发，也可把开发仓库的新改动导出到另一个新目录，审查

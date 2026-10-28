@@ -28,8 +28,8 @@ def verify_binaries(expected):
 
 def sources():
     files = [root/'CMakeLists.txt', root/'.clang-format']
-    files += [p for p in root.glob('*.md') if p.name != 'VERIFICATION.md']
-    for folder in ['src','include','runtime','tests','tools','frontend','proofs','standards','compatibility']:
+    files += list(root.glob('*.md'))
+    for folder in ['src','include','runtime','tests','tools','frontend','proofs','standards','compatibility','docs']:
         files += [p for p in (root/folder).rglob('*')
                   if p.is_file() and '__pycache__' not in p.parts and p.suffix != '.pyc']
     return {str(p.relative_to(root)): digest(p) for p in sorted(files)}
@@ -61,7 +61,7 @@ def main():
     before=sources()
     report={'status':'running','started_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
             'platform':platform.platform(),'compiler':version,'sources':before,'gates':[],
-            'scope':'Supported safe C++ subset; see PRODUCTION.md and SAFETY-MODEL.md'}
+            'scope':'Supported safe C++ subset; see docs/VALIDATION.md and docs/SAFETY.md'}
     report['full_compatibility_status']='not_established'
     report['subset_status']='not_validated'
     frozen_binaries={}
